@@ -3,10 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mali-Boutique</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: #111;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #e8f5e9;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #008000;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product .image {
+      height: 150px;
+      background: #ddd;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 50px;
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #008000;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+
+      nav a {
+        margin: 0 5px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Bienvenue sur Mali-Boutique</h1>
-  <p>Votre boutique en ligne au Mali.</p>
+
+  <header>
+    <h1>🇲🇱 Mali-Boutique</h1>
+    <p>Votre boutique en ligne au Mali</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="accueil">
+    <h2>Bienvenue sur Mali-Boutique</h2>
+    <p>Découvrez nos produits et commandez facilement en ligne.</p>
+    <a href="#produits" class="button">Voir les produits</a>
+  </section>
+
+  <section class="products" id="produits">
+    <h2>Nos produits</h2>
+
+    <div class="product-list">
+
+      <div class="product">
+        <div class="image">🛍️</div>
+        <h3>Produit 1</h3>
+        <p class="price">10 000 FCFA</p>
+        <a href="#contact" class="button">Commander</a>
+      </div>
+
+      <div class="product">
+        <div class="image">👕</div>
+        <h3>Produit 2</h3>
+        <p class="price">15 000 FCFA</p>
+        <a href="#contact" class="button">Commander</a>
+      </div>
+
+      <div class="product">
+        <div class="image">🎒</div>
+        <h3>Produit 3</h3>
+        <p class="price">20 000 FCFA</p>
+        <a href="#contact" class="button">Commander</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h3>Contactez-nous</h3>
+    <p>📞 Téléphone : Votre numéro</p>
+    <p>📍 Mali</p>
+    <p>© 2026 Mali-Boutique</p>
+  </footer>
+
 </body>
 </html>
